@@ -35,6 +35,10 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
   </head>
 
   <body>
@@ -222,26 +226,26 @@
           <div class="col-lg-6">
             <div class="text-center">
               <h1 class="display-3 text-white mb-4">Contact Us</h1>
-              <p class="text-white fs-4">
-                The contact form is currently inactive. Get a functional and
-                working contact form with Ajax & PHP in a few minutes. Just copy
-                and paste the files, add a little code and you're done.
-                <a
-                  class="text-secondary"
-                  href="https://htmlcodex.com/contact-form"
-                  >Download Now</a
-                >.
+              <p class="text-white fs-4" style="text-align: justify">
+                Whether you're ready to book a rejuvenating treatment or simply
+                have a question, we're here to help! Please fill out the form,
+                and one of our team members will get back to you shortly. We aim
+                to respond within 24 hours. For immediate assistance, feel free
+                to give us a call or visit us in person. We look forward to
+                making your experience with us as relaxing and enjoyable as
+                possible!
               </p>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="contact-form rounded p-5">
-              <form>
+              <form id="contact-form">
                 <h1 class="display-6 mb-4">Do You have Any Questions?</h1>
                 <div class="row gx-4 gy-3">
                   <div class="col-xl-6">
                     <input
                       type="text"
+                      name="first_name"
                       class="form-control bg-white border-0 py-3 px-4"
                       placeholder="Your First Name"
                     />
@@ -249,6 +253,7 @@
                   <div class="col-xl-6">
                     <input
                       type="email"
+                      name="email"
                       class="form-control bg-white border-0 py-3 px-4"
                       placeholder="Your Email"
                     />
@@ -256,6 +261,7 @@
                   <div class="col-xl-6">
                     <input
                       type="text"
+                      name="phone"
                       class="form-control bg-white border-0 py-3 px-4"
                       placeholder="Your Phone"
                     />
@@ -263,6 +269,7 @@
                   <div class="col-xl-6">
                     <input
                       type="text"
+                      name="subject"
                       class="form-control bg-white border-0 py-3 px-4"
                       placeholder="Subject"
                     />
@@ -272,6 +279,7 @@
                       class="form-control bg-white border-0 py-3 px-4"
                       rows="4"
                       cols="10"
+                      name="message"
                       placeholder="Your Message"
                     ></textarea>
                   </div>
@@ -333,9 +341,11 @@
           <div class="col-12">
             <div class="rounded">
               <iframe
-                class="rounded-top w-100"
-                style="height: 450px; margin-bottom: -6px"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d997.2027275376884!2d36.7899884!3d-1.2875775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10a5796e835d%3A0xad73451b24476b93!2sSpa%20Cleopatra!5e0!3m2!1sen!2ske!4v1727176299128!5m2!1sen!2ske"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
@@ -379,9 +389,9 @@
             <div class="footer-item">
               <h4 class="mb-4 text-white">Newsletter</h4>
               <p class="text-white">
-                Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-                tempor dui, non consectetur enim.
+                Stay updated on our latest treatments, exclusive offers, and
+                wellness tips! Subscribe to our newsletter and be the first to
+                know about special promotions.
               </p>
               <div class="position-relative mx-auto rounded-pill">
                 <input
